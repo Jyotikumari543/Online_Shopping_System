@@ -5,7 +5,7 @@ An online shopping system built using JDBC (Java Database Connectivity) and JSP 
 # Architecture:
  Client-Side Interface:
 The user interacts with the system through a web browser.
-HTML, CSS, and JavaScript are used to create the user interface, layout, and interactivity.
+HTML and CSS,  are used to create the user interface and  layout.
 
  Server-Side Logic:
 Java Servlets handle HTTP requests and responses. They process user input, interact with the database, and generate dynamic content.
