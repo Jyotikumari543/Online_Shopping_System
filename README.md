@@ -14,6 +14,74 @@ Java Servlets handle HTTP requests and responses. They process user input, inter
 JDBC is used to connect to the database, execute SQL queries, and retrieve or update data.
 Stores information about products, users, orders, etc.
 
+
+# Shopping System Overview for users:
+
+# Login Page:
+
+Users will enter their credentials (username and password) on the login page.
+JSP will handle the form submission and validate the user against the credentials stored in the MySQL database using JDBC.
+
+# Authentication:
+
+Upon form submission, the servlet will receive the login credentials.
+It will then query the MySQL database using JDBC to verify the credentials.
+If the credentials are valid, the servlet will create a session for the user and redirect them to the main shopping page. Otherwise, it will return an error message.
+
+
+# Main Shopping Page :
+
+This page will display available products for purchase.
+Users can add products to their shopping cart and proceed to checkout.
+
+# Shopping Cart Management:
+
+Users can add/remove items from their shopping cart.
+The servlet will manage these operations, updating the session data accordingly.
+
+# Checkout Page :
+Users can review the items in their cart and proceed to checkout.
+This page will display the total cost and prompt users to confirm their purchase.
+
+# Order Processing  :
+
+Upon confirmation, the servlet will generate an order entry in the MySQL database.
+It will update product quantities and user order history accordingly.
+
+# Bill Generation:
+
+After order processing, users will be presented with a bill summarizing their purchase.
+This page will display order details, including itemized costs, total amount, and payment options.
+
+
+# Shopping System Overview for Admin:
+
+# Admin Login :
+
+Administrators will have a same login page of user and admin  to access the admin dashboard.
+admin will enter their credentials (username and password) on the login page.
+JSP will handle the form submission and validate the admin against the credentials stored in the MySQL database using JDBC.
+Upon form submission, the servlet will receive the login credentials.
+It will then query the MySQL database using JDBC to verify the credentials.
+If the credentials are valid, the servlet will create a session for the admin and admin will be redirected to the admin dashboard.. Otherwise, it will return an error message.
+
+# Admin Dashboard :
+
+This page serves as the central hub for admin functionalities.
+Admins can view, add, edit, or delete products, and orders.
+
+# Product Management:
+
+Admins can view a list of all products available in the store.
+They have the ability to add new products, edit existing ones, or delete products.
+Features like updating product details (name, price, description, etc.) and managing inventory fall under product management.
+
+# Order Management:
+
+Admins can view a list of all orders placed by customers.
+They can see order details such as order ID, customer information, items purchased, total amount, and order status.
+Admins may have the ability to change order statuses (e.g., from 'pending' to 'shipped') and manage order fulfillment.
+
 # Screenshots
 
 # Userside UI
